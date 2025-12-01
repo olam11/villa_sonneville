@@ -37,3 +37,16 @@
   font-weight: 400;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/src/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: medium;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/src/assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: semibold;
+}
