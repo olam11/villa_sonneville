@@ -7,35 +7,49 @@
     <meta property="title" content="" />
 	<meta name="description" content="" />
     <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./favicon.ico">
+
     <title>Villa Sonneville</title>
 </head>
 <body class="h-screen font-serif">
 
-    <div class="relative w-full h-full bg-cover bg-center" style="background-image: url('src/img/image4.webp')">
-    <nav class="py-3 animate-fadeInDown">
+<div class="relative w-full h-full bg-cover bg-center" 
+     style="background-image: url('src/img/image4.webp')">
+
+  <!-- Overlay gris -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+
+  <!-- Navigation -->
+  <nav class="py-3 animate-fadeInDown relative z-10">
     <div class="flex items-center justify-between">
-        <div class="px-3">
+      <div class="px-3">
         <img src="src/img/logo.png" alt="Logo" class="h-10 w-auto">
-        </div>
-        <div class="flex ml-auto px-10">
-        <a href="https://uh5.fr/" class="hover:text-gray-800">UH5</a>
-        <a href="#" class="hover:text-gray-800 ml-6">À propos</a>
-        </div>
+      </div>
+      <div class="flex ml-auto px-10">
+        <a href="https://uh5.fr/" class="hover:text-gray-800 text-white">UH5</a>
+        <a href="https://www.villasonneville.com/fr/chambre/lavilla" class="hover:text-gray-800 ml-6 text-white">Maison d'hôtes</a>
+      </div>
     </div>
-    </nav>
-        
-        <div class="flex justify-center items-center h-full w-full">
-            
-            <h1 class="text-4xl text-white animate-fadeInDown">Villa Sonneville</h1>
-        </div>
-    </div>
+  </nav>
+
+  <!-- Contenu -->
+  <div class="flex justify-center items-center h-full w-full flex-col relative z-10">
+    <h1 class="text-4xl text-white animate-fadeInDown">Villa Sonneville</h1>
+    <p class="text-white animate-fadeInDown test-xl">Maison galerie d'art · Chambre d'hotes</p>
+  </div>
+</div>
+
     <div class="flex flex-col md:flex-row-reverse items-center m-5">
     <div class="w-full md:w-1/2 px-3">
         <img src="src/img/image1.webp" alt="image 1" class="w-full h-auto rounded-lg">
     </div>
     <div class="w-full md:w-1/2 p-8">
-        <h2>Titre</h2>
-        <p>Texte associé à l’image.</p>
+       <p>11 déc. 2025 - 25 avr. 2026</p> 
+        <h1 class="font-bold text-4xl">Ellipses</h1> 
+        <h2 class="text-3xl"> Cédric Carré</h2>
+        <p>PEINTURE, GRAVURE </p>
+        <p class="text-gray-500 text-sm">Photo : Laurence Pigeyre </p>
     </div>
     </div>
     <div class="flex flex-col md:flex-row items-center m-5">
@@ -43,8 +57,13 @@
         <img src="src/img/image3.webp" alt="image 1" class="w-full h-auto rounded-lg">
     </div>
     <div class="w-full md:w-1/2 p-8">
-        <h2>Titre</h2>
-        <p>Texte associé à l’image.</p>
+        <p>11 déc. 2025 - 25 avr. 2026</p>
+        <h1 class="font-bold text-4xl">Carrés de terre</h1>
+        <h2 class="text-3xl">Jean-Claude Legrand</h2>
+        <p>CÉRAMIQUE</p>
+        <p>Résidente permanente à Villa Sonneville, la galerie de céramique contemporaine Le Fil rouge présente une série d'œuvres du céramiste Jean-Claude Legrand. </p>
+        <p class="text-gray-500 text-sm">Jean-Claude Legrand, Couple, Oxydes et engobes sur grès, 16,5 x 59 x 9,2 cm Photo Michel Lefranca </p>
+        
     </div>
     </div>
     <div class="flex flex-col md:flex-row-reverse items-center m-5">
@@ -52,13 +71,17 @@
         <img src="src/img/image2.webp" alt="image 1" class="w-full h-auto rounded-lg">
     </div>
     <div class="w-full md:w-1/2 p-8">
-        <h2>Titre</h2>
-        <p>Texte associé à l’image.</p>
+        <p>17 déc. 2025 - 25 avr. 2026</p>
+        <h1 class="font-bold text-4xl">Plagistes</h1>
+        <h2 class="text-3xl">Christophe Boulanger</h2>
+        <p>DESSIN, LIVRE D'ART</p>
+        <p>Avec <span class="italic">Plagistes</span>, anthologie joyeuse de 10 ans de farniente à croquer les foules des plages, Christophe Boulanger nous offre une sélection parmi plus de 800 dessins sous forme de livre d'art en édition limitée à 150 exemplaires. <br>Christophe a choisi Villa Sonneville pour le lancement de son ouvrage. <br> <span class="font-bold">Dédicace</span> : ven 12, sam 13 et dim 14 décembre 2025 à l'occasion de la 29ème Nuit des Arts Roubaix  </p>
+        <p class="text-gray-500 text-sm">Photo: Christophe Boulanger </p>
     </div>
     </div>
-    <div class="m-3 ml-10 flex justify-center mt-10"><h1 class="text-3xl">S'incrire à notre newsletter</h1></div>
+    <div class="m-3 ml-10 flex justify-center  items-center mt-10 flex-col"><h1 class="text-3xl">S'incrire à notre newsletter</h1>
     
-    <div class="flex justify-center items-center m-10 ">
+
         
         <form
               id="sib-form"
@@ -94,12 +117,8 @@
                   <path d="M13 5l7 7-7 7"></path>
                 </svg>
               </button>
-
-              <p class="mt-3 text-xs text-gray-800 text-center">
-                Nous n'envoyons que des nouvelles importantes. Vous pouvez vous désinscrire à tout moment.
-              </p>
             </form>
-    </div>
+        </div>
   <footer class="py-8">
     <div class="max-w-3xl mx-auto px-6 flex items-center justify-center gap-4">
       <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
