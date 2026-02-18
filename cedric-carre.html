@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr_FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="locale" content="fr_FR" />
+    <meta property="title" content="Galerie d'art - Villa Sonnneville'" />
+	  <meta name="description" content="Villa Sonneville, maison-galerie d’art à Roubaix : expositions, résidences et événements culturels dans une demeure historique d'exception des années 1920." />
+    <!-- Favicon classique -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+
+    <!-- PNG haute résolution -->
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+
+    <!-- Apple Touch Icon (iPhone/iPad) -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Manifest (PWA) -->
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preload" href="/src/assets/fonts/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+
+    <title>Villa Sonneville - Cédric Carré</title>
+</head>
+<body class="h-screen font-montserrat">
+
+    <div class="relative w-full h-full bg-cover bg-center" 
+      style="background-image: url('src/img/image3.webp')">
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Navigation -->
+  <nav class="py-3 animate-fadeInDown relative z-10">
+    <div class="flex items-center justify-between">
+      <div class="px-3">
+        <a href="/index.html">
+          <img src="src/img/logo.webp" alt="Logo" class="h-10 w-auto" width="120" height="40">
+        </a>
+        
+      </div>
+      <div class="flex ml-auto px-10">
+        <a href="https://uh5.fr/" class="hover:text-gray-800 text-white">UH5</a>
+        <a href="https://www.villasonneville.com/fr/chambre/lavilla" class="hover:text-gray-800 ml-6 text-white">Chambre d'hôtes</a>
+      </div>
+    </div>
+  </nav>
+  <div class="flex justify-center items-center h-full w-full flex-col relative z-10">
+    <h1 class="text-4xl text-white animate-fadeInDown text-center">Cédric Carré</h1>
+    <p class="text-white animate-fadeInDown text-sm text-center mx-15 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, reprehenderit ipsa molestias accusantium laborum aut dolorem delectus. Reprehenderit magni earum fugit quia aliquid quo quod inventore. Aliquid eaque culpa fuga.</p>
+  </div>
+    </div>
+    <div class="flex flex-col md:flex-row items-center m-5 rounded-xl py-5 px-5">
+        <div class="w-full md:w-1/2 px-3 flex items-center justify-center flex-col">
+            <img src="src/img/image2.webp" alt="image 1" class="w-full h-auto rounded-lg hidden md:block aspect-4/3"  width="624" height="468">
+            <img src="src/img/image_mobile2.webp" class="w-full h-auto rounded-lg block md:hidden aspect-4/3" alt="Image 1">
+        </div>
+        <div class="w-full md:w-1/2 p-8">
+            <h1 class="text-4xl pb-3">Le journal</h1> 
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum facere debitis dicta mollitia labore ullam eligendi unde quia blanditiis, aut rerum ipsa soluta maxime assumenda quas qui. Vero, assumenda voluptates.</p>
+            <a href="./journal.html"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-zinc-200 rounded-lg mt-5
+                    hover:bg-zinc-300">
+            Nous contacter
+            <span class="text-lg">→</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
