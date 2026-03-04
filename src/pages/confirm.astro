@@ -1,128 +1,33 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Villa Sonneville – Confirmation</title>
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
 
-  <!-- Montserrat -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600" rel="stylesheet" />
+<BaseLayout>
+  <div class="min-h-screen bg-gray-100 py-[90px] px-5">
+    <div class="mx-auto max-w-2xl rounded-3xl border border-gray-200 bg-white px-14 py-[70px] shadow-lg md:px-14">
+      <h1 class="mb-[18px] text-center text-2xl font-medium tracking-wide text-gray-900">
+        Votre inscription est confirmée
+      </h1>
 
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f3f3f3;
-      font-family: 'Montserrat', Arial, sans-serif;
-      color: #1a1a1a;
-    }
+      <div class="mx-auto mb-6 h-0.5 w-14 rounded bg-gray-600"></div>
 
-    .wrapper {
-      padding: 90px 20px;
-    }
-
-    .container {
-      max-width: 640px;
-      margin: 0 auto;
-      background: #ffffff;
-      padding: 70px 55px;
-      border-radius: 18px;
-      border: 1px solid #e2e2e2;
-      box-shadow: 0 18px 55px rgba(0,0,0,0.07);
-    }
-
-    .title {
-      font-size: 26px;
-      font-weight: 500;
-      text-align: center;
-      margin-bottom: 18px;
-      letter-spacing: 1px;
-      color: #111111;
-    }
-
-    .divider {
-      width: 55px;
-      height: 2px;
-      background: #c8a96a;
-      margin: 0 auto 35px auto;
-      border-radius: 2px;
-    }
-
-    .text {
-      font-size: 15px;
-      line-height: 28px;
-      font-weight: 300;
-      text-align: center;
-      color: #444444;
-      margin-bottom: 25px;
-    }
-
-    .signature {
-      margin-top: 35px;
-      font-weight: 400;
-      font-size: 14px;
-      text-align: center;
-      color: #111111;
-      letter-spacing: 0.4px;
-    }
-
-    .button-wrapper {
-      text-align: center;
-      margin-top: 35px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 12px 28px;
-      background: #c8a96a;
-      color: #ffffff;
-      font-size: 13px;
-      font-weight: 500;
-      text-decoration: none;
-      border-radius: 28px;
-      letter-spacing: 0.4px;
-      transition: 0.3s ease;
-    }
-
-    .button:hover {
-      background: #b8955a;
-    }
-
-    @media only screen and (max-width: 480px) {
-      .container {
-        padding: 50px 28px;
-      }
-      .title {
-        font-size: 22px;
-      }
-      .text {
-        font-size: 14px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <div class="wrapper">
-    <div class="container">
-
-      <div class="title">Votre inscription est confirmée</div>
-      <div class="divider"></div>
-
-      <div class="text">
-        Merci pour votre inscription à notre lettre d'information.<br><br>
+      <p class="mb-6 text-center text-sm font-light leading-7 text-gray-600">
+        Merci pour votre inscription à notre lettre d'information.<br /><br />
         Vous recevrez désormais les actualités, annonces et événements de Villa Sonneville.
+      </p>
+
+      <div class="text-center">
+        <a
+          href="/"
+          class="inline-block rounded-full bg-gray-600 px-7 py-3 text-xs font-medium tracking-tight text-white transition-colors duration-300 hover:bg-gray-700"
+        >
+          Retour au site
+        </a>
       </div>
 
-      <div class="button-wrapper">
-        <a href="/" class="button">Retour au site</a>
-      </div>
-
-      <div class="signature">
+      <div class="mt-9 text-center text-sm font-normal tracking-tight text-gray-900">
         Villa Sonneville
       </div>
-
     </div>
   </div>
-</body>
-</html>
+</BaseLayout>
