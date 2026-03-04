@@ -24,8 +24,8 @@ import Img08 from "../../assets/img/14-HDJPG-Villa-Sonneville-BassineEncadree_Ce
 import Img09 from "../../assets/img/17-HDJPG-Villa-Sonneville-Gravure-bassine-01-Cedric-Carre_DSC9926.webp";
 import Img10 from "../../assets/img/20-HDJPG-Villa-Sonneville-Gravure-Stade-01-Cedric-Carre_DSC9956.webp";
 import Img11 from "../../assets/img/16-HDJPG-Villa-Sonneville-Fleur-02-Cedric-Carre_DSC9913.webp";
-import Img12 from "../../assets/img/19-HDJPG-Villa-Sonneville-Stade-bleu-Cedric-Carre_DSC9805.webp";
-import Img13 from "../../assets/img/18-HDJPG-villa-sonneville-Grand-stade-diptyque-noir_Cedric-Carre_DSC9800.jpeg.sb-bf34cfc8-KVYMyd.webp";
+import Img12 from "../../assets/img/19-HDJPG-Villa-Sonneville-Stade-bleu-Cedric-Carre_DSC9805.jpeg";
+import Img13 from "../../assets/img/18-HDJPG-villa-sonneville-Grand-stade-diptyque-noir_Cedric-Carre_DSC9800.jpeg.sb-bf34cfc8-KVYMyd.jpeg";
 import Img14 from "../../assets/img/09-Villa-sonneville-bassine-grande-bassine-01-Inv449-195x130-recadre-Cedric-Carre_DSC9946.webp";
 import Img15 from "../../assets/img/08_villa-sonneville-bassine-grande-bassine-02-195x130-Cedric-Carre-recadre-02DSC9939.webp";
 import Img16 from "../../assets/img/11-HD-JPEG-Villa-sonneville-Grue-01-Cedric-Carre_recadre_DSC10123.webp";
@@ -41,14 +41,19 @@ import Img25 from "../../assets/img/A-fleur-INV3354-Cedric-Carre_IMG_8277.jpg";
 ---
 
 <BaseLayout>
-  <HeroBanner image={heroImg} title="CÉDRIC CARRÉ" subtitle="Peinture" alt="Portrait de Cédric Carré"/>
+  <HeroBanner
+    image={heroImg}
+    title="CÉDRIC CARRÉ"
+    subtitle="Peinture"
+    alt="Portrait de Cédric Carré"
+  />
   <Citation
     text={`La peinture c’est quelqu’un qui entre chez toi par la fenêtre et qui dit : je t’attendais.`}
     author="Cédric Carré"
   />
   <hr class="mx-13 sm:mx-13 md:mx-13 lg:mx-32 border-t border-gray-300 mt-10" />
   <!-- a fleur  -->
-  <section>
+  <section class="w-full">
     <!-- À fleur - InvXXXX - Très grand format (Image Full) -->
     <ArtworkCardFull
       image={Fleur}
@@ -71,7 +76,8 @@ import Img25 from "../../assets/img/A-fleur-INV3354-Cedric-Carre_IMG_8277.jpg";
       dimensions="24x19 cm"
       format="Petit Format"
       price="590€"
-    /> <!-- À fleur - Inv355 (Image à gauche) -->
+    />
+    <!-- À fleur - Inv355 (Image à gauche) -->
     <!-- À fleur - Inv3342 (image à droite) -->
     <ArtworkCard
       image={Img24}
@@ -117,7 +123,7 @@ import Img25 from "../../assets/img/A-fleur-INV3354-Cedric-Carre_IMG_8277.jpg";
     image={Img13}
     alt="Grand stade dit noir (diptyque), huile sur toile, Cédric Carré, Villa Sonneville"
     title="GRAND STADE (Diptyque noir)"
-    year="2023 - 2024" 
+    year="2023 - 2024"
     technique="Huile sur toile"
     dimensions="146 x 228 cm"
     reference="Inv3845-3846"
@@ -152,7 +158,7 @@ import Img25 from "../../assets/img/A-fleur-INV3354-Cedric-Carre_IMG_8277.jpg";
   /><!-- Tour de Babel - Inv2897 -->
   <hr class="mx-13 sm:mx-13 md:mx-13 lg:mx-32 border-t border-gray-300 mt-10" />
   <!-- Bassines -->
-  <section>
+  <section class="w-full">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 m-8">
       <!-- CARD 0 -->
       <ArtworkGridCard
@@ -312,7 +318,7 @@ import Img25 from "../../assets/img/A-fleur-INV3354-Cedric-Carre_IMG_8277.jpg";
   </section>
   <!-- venise -->
   <hr class="mx-13 sm:mx-13 md:mx-13 lg:mx-32 border-t border-gray-300 mt-10" />
-  <section>
+  <section class="w-full">
     <!-- venise - Inv954 - gauche -->
     <ArtworkCard
       image={Img16}
@@ -342,19 +348,19 @@ import Img25 from "../../assets/img/A-fleur-INV3354-Cedric-Carre_IMG_8277.jpg";
     /><!-- venise - Inv3190 - OK - droite -->
     <!-- venise - Inv958 - OK - gauche -->
     <ArtworkCard
-  image={Img20}
-  alt="Venise, Huile sur toile, Cédric Carré, Villa Sonneville"
-  title="VENISE"
-  year="2002 - 2009"
-  reference="Inv958"
-  technique="Huile sur toile marouflée sur bois"
-  dimensions="27x33 cm"
-  format="Petit Format"
-  price="800€"
-  contactUrl="/contact"
-  reverse={false}
-/><!-- venise - Inv958 - gauche-->
-<!-- venise - Inv984 - OK - gauche -->
+      image={Img20}
+      alt="Venise, Huile sur toile, Cédric Carré, Villa Sonneville"
+      title="VENISE"
+      year="2002 - 2009"
+      reference="Inv958"
+      technique="Huile sur toile marouflée sur bois"
+      dimensions="27x33 cm"
+      format="Petit Format"
+      price="800€"
+      contactUrl="/contact"
+      reverse={false}
+    /><!-- venise - Inv958 - gauche-->
+    <!-- venise - Inv984 - OK - gauche -->
     <ArtworkCard
       image={Img19}
       alt="Venise, Huile sur toile, Cédric Carré, Villa Sonneville"
@@ -368,7 +374,7 @@ import Img25 from "../../assets/img/A-fleur-INV3354-Cedric-Carre_IMG_8277.jpg";
       contactUrl="/contact"
       reverse={true}
     /><!-- venise - Inv984 - OK - gauche -->
-<!-- venise - Inv3727 - OK - droite -->
+    <!-- venise - Inv3727 - OK - droite -->
     <ArtworkCard
       image={Img21}
       alt="Venise, Huile sur toile, Cédric Carré, Villa Sonneville"
@@ -382,7 +388,7 @@ import Img25 from "../../assets/img/A-fleur-INV3354-Cedric-Carre_IMG_8277.jpg";
       contactUrl="/contact"
       reverse={false}
     /><!-- venise - Inv3727 - OK - droite -->
-  <!-- venise - Inv982 OK - droite -->
+    <!-- venise - Inv982 OK - droite -->
     <ArtworkCard
       image={Img23}
       alt="Venise, Huile sur toile, Cédric Carré, Villa Sonneville"
@@ -396,18 +402,18 @@ import Img25 from "../../assets/img/A-fleur-INV3354-Cedric-Carre_IMG_8277.jpg";
       contactUrl="/contact"
       reverse={true}
     /><!-- venise - Inv984 - OK - droite -->
-<!-- venise - Inv956 - droite -->
-<ArtworkCard
-  image={Img18}
-  alt="Venise, Huile sur toile, Cédric Carré, Villa Sonneville"
-  title="VENISE"
-  year="2002 - 2009"
-  technique="Huile sur toile"
-  dimensions="24x30 cm"
-  reference="Inv956"
-  format="Petit Format"
-  price="Vendu"
-  contactUrl="/contact"
-/><!-- venise - Inv956 - droite -->
+    <!-- venise - Inv956 - droite -->
+    <ArtworkCard
+      image={Img18}
+      alt="Venise, Huile sur toile, Cédric Carré, Villa Sonneville"
+      title="VENISE"
+      year="2002 - 2009"
+      technique="Huile sur toile"
+      dimensions="24x30 cm"
+      reference="Inv956"
+      format="Petit Format"
+      price="Vendu"
+      contactUrl="/contact"
+    /><!-- venise - Inv956 - droite -->
   </section>
 </BaseLayout>

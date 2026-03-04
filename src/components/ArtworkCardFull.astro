@@ -40,23 +40,24 @@ const formatClass = formatStyles[format] ?? "bg-zinc-200/60 border-zinc-300";
 // Variant-specific settings
 const isThumb = variant === "thumb";
 ---
+
 <div class="m-13">
   {
     image && (
-        <Image
-          src={image}
-          alt={alt}
-          format="webp"
-          widths={[320,480,768,1024,1280,1600,1920]}
-sizes="(max-width: 600px) 40vw, (max-width: 1200px) 50vw, 33vw"
-
-
-          layout="constrained"
-          width={image.width}
-          height={image.height}
-          quality={60}
-          class="w-full h-auto"
-        />
+      <Image
+        src={image}
+        alt={alt}
+        format="webp"
+        widths={[320, 480, 768, 1024, 1280, 1600, 1920]}
+        sizes="(max-width: 600px) 50vw,
+         (min-width: 1224px) 1224px,
+         calc(100vw - 6.5rem)"
+        layout="constrained"
+        width={image.width}
+        height={image.height}
+        quality={60}
+        class="w-full h-auto"
+      />
     )
   }
 
@@ -87,9 +88,7 @@ sizes="(max-width: 600px) 40vw, (max-width: 1200px) 50vw, 33vw"
         </>
       )
     }
-
     <br />
-
     <a
       href={contactUrl}
       class="inline-flex items-center gap-2 px-6 py-3 bg-zinc-200 rounded-lg mt-5 hover:bg-zinc-300"
